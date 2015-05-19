@@ -1,5 +1,5 @@
 <?php
-function greeting_menu() {
+function greetings_menu() {
     $items = array();
     $items['hello_friend'] = array(
         'title' => 'Hello friend!',
@@ -24,10 +24,10 @@ function say_farewell() {
     return '<p>Fare thee well my dear friend!</p>';
 }
 
-function greeting_user_login() {
+function greetings_user_login() {
     $_GET['destination'] = 'hello_friend';
 }
 
-function greeting_user_logout() {
+function greetings_user_logout() {
     $_GET['destination'] = 'farewell';
 }
